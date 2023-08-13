@@ -1,0 +1,210 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: rgb(41, 65, 62);
+}
+
+.logo {
+  position: absolute;
+  height: 1%;
+  top: 5%;
+  left: 6%;
+  bottom: 2%;
+}
+
+.menu {
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+.menu1 {
+  display: flex;
+  list-style: none;
+}
+
+.points {
+  margin-right: 5%;
+}
+
+.content {
+  background-image: url(../images/headerphoto.png);
+  background-position: center;
+  width: 100vw;
+  height: 300px;
+}
+
+.mainheadings {
+  text-align: center;
+  padding: 2%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "firstpart secondpart thirdpart";
+  justify-items: center;
+}
+
+h3 {
+  color: rgb(72, 145, 119);
+  font-style: italic;
+}
+
+.gridimage {
+  height: 500px;
+}
+
+.firstpart {
+  grid-area: firstpart;
+  padding: 20%;
+}
+
+.secondpart {
+  grid-area: secondpart;
+}
+
+.thirdpart {
+  grid-area: thirdpart;
+  padding: 20%;
+}
+
+.section {
+  background-image: url(../images/backgroundImage.png);
+  background-position: center;
+  padding: 10%;
+  text-align: center;
+}
+
+/* .footer {   Делала так, но не срабатывает - футер показывается в строку
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "element1 element2 element3";
+  max-width: 50%;
+} */
+
+.footer {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu2 {
+  display: flex;
+  list-style: none;
+}
+
+.points2 {
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu1 {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "firstpart"
+      "secondpart"
+      "thirdpart";
+    justify-items: center;
+  }
+
+  .menu2 {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu1 {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "firstpart"
+      "secondpart"
+      "thirdpart";
+    justify-items: center;
+  }
+
+  .menu2 {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu1 {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "firstpart"
+      "secondpart"
+      "thirdpart";
+    justify-items: center;
+  }
+
+  .menu2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu1 {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "firstpart"
+      "secondpart"
+      "thirdpart";
+    justify-items: center;
+  }
+
+  .menu2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu1 {
+    font-size: 0.5em;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "firstpart"
+      "secondpart"
+      "thirdpart";
+    justify-items: center;
+  }
+
+  .menu2 {
+    display: none;
+  }
+}
